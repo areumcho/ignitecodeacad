@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href='http://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="./css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./css/grid.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/ionicons.min.css">
+    
+    <script type="text/javascript" src="script.js"></script>
+    <script src="jquery.min.js"></script>
+   
+    <meta charset="UTF-8">
+    <title>Ignite</title>
+
+
+    <script>
+        $(document).ready(function() {
+
+
+            $('.nav-hello').click(function() {
+                var headerTop = $('.header').offset().top;
+
+                $('html,body').animate({
+                    scrollTop: headerTop
+                }, 1000);
+            });
+
+            $('.nav-mission').click(function() {
+                var missionTop = $('.section-mission').offset().top;
+
+                $('html,body').animate({
+                    scrollTop: missionTop
+                }, 1000);
+            });
+
+            $('.nav-findus').click(function() {
+                var findUsTop = $('.section-findus').offset().top;
+
+                $('html,body').animate({
+                    scrollTop: findUsTop
+                }, 1000);
+            });
+
+        });
+        
+    
+    </script>
+
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img class="logo" src="img/logo.jpg">
+            <div class="navi-bar">
+                <ul>
+                    <li class="nav-hello">HELLO</li>
+                    <li class="nav-mission">MISSION</li>
+                    <li class="nav-findus">FIND US</li>
+                </ul>
+            </div>
+        </nav>
+        <div class="row intro">
+            <h1>Come get your digital literacy on!</h1>
+
+        </div>
+
+        <div class="row">
+
+            <div class="left">
+
+                <h2>Come get your digital literacy on and attend a free workshop to learn code!</h2>
+
+                <p> to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+            </div>
+            <div class="right">
+
+                <div class="form-style-10">
+                    <h1>Sign Up Now!<span>Sign up and attend a free coding wokshop</span></h1>
+                    <form>
+                        <!--                        <div class="section">Full Name &amp; Email</div>-->
+                        <div class="inner-wrap">
+                            <label>Your Full Name <input type="text" name="field1" required /></label>
+                            <label>Email Address <input type="email" name="field3" requr
+                             /></label>
+                        </div>
+
+                        <div class="button-section">
+                            <input type="submit" name="Sign Up" />
+
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+    <section class="section-mission js-section-mission">
+        <div class="row">
+            <h1>The workshop is open for everyone!</h1>
+        </div>
+        <div class="row">
+            <div class="col span-1-of-3">
+                <blockquote><span>Our Mission</span><br> Ignite Technology Academy is dedicated to expanding access to technology and computer science by increasing participation amongst college students, faculty, staff, alumni and community.
+
+                </blockquote>
+
+            </div>
+            <div class="col span-1-of-3">
+                <blockquote><span>Our goal</span><br> Our goal is to facilitate a technology-based program that is accessible to all interested parties who want to learn about emerging technologies, computer science and coding.
+
+                </blockquote>
+
+            </div>
+            <div class="col span-1-of-3">
+                <blockquote><span>Algonquin Student</span><br> participation will add hours to the co-curriculum on their transcript but that is only for Algonquin students.
+                </blockquote>
+
+            </div>
+        </div>
+
+
+    </section>
+    <section class="section-findus js-section-findus">
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2804.02490873019!2d-75.75842888509526!3d45.34830944919092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce071ee7d7f997%3A0x5547a440a81b0550!2sAlgonquin+College!5e0!3m2!1sen!2sca!4v1504034594044" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </section>
+
+   <footer>
+            <div class="row">
+
+                        <ul class="social-links">
+                            <li><a href="#"><i class="ion-social-facebook"></i></a></li>
+                            <li><a href="https://twitter.com/ignitetechacad"><i class="ion-social-twitter"></i></a></li>
+                            <li><a href="mailto:ignitetechacademy@gmail.com"><i class="ion-email"></i></a></li>
+                            <li><a href="https://www.instagram.com/ignitetechacademy/"><i class="ion-social-instagram"></i></a></li>
+                            
+                        </ul>
+            
+            </div>
+        
+            <div class="row">
+            
+                <p>
+                     Copyright &copy; 2017 by Ignite Tech Academy. All rights reserved. 
+                </p>
+            </div>
+        
+        
+        </footer>
+        
+
+</body>
+
+</html>
