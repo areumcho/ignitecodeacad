@@ -1,6 +1,6 @@
 /************************************/
-/*    Theme colour: #2a88ad         */
-/*                : #fff            */
+/*    Theme colour: #FF7E36   ORANGE */
+/*                : #95D300   GREEN  */
 /************************************/
 
 body {
@@ -26,7 +26,7 @@ body {
 /************************************/
 
 header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/picture3.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url(../img/background.jpg);
     height: 100vh;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -39,16 +39,28 @@ header {
 
 /* LOGO                 */
 
-header nav img {
+header nav .logo {
     float: left;
     height: 50px;
+    width: auto;
     margin-left: 30px;
+ 
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    
+
 }
 
 header nav {
+    position: relative;
+    height: 70px;
     overflow: hidden;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
+
+
 
 header nav .navi-bar {
     float: right;
@@ -64,19 +76,21 @@ header nav .navi-bar {
 
 ul li {
     float: left;
-    margin-right: 40px;
+    margin-right: 50px;
     vertical-align: middle;
     line-height: 50px;
 }
 
-ul li:hover{
+header ul li:hover{
     cursor: pointer;
-    border-bottom: 2px solid #2a88ad;
+    padding: 2px 10px;
+    background-color: #95D300;
+    border-radius: 3px;
 }
 
 
 h1 {
-    color: #2a88ad;
+    color: #FF7E36;
     font-size: 60px;
     margin: 0 auto;
     display: block;
@@ -115,10 +129,9 @@ header .right {
     padding: 30px;
     margin: 40px auto;
     background: #FFF;
-    /*
+
     border-radius: 10px;
     -webkit-border-radius:10px;
-*/
     -moz-border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
     -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
@@ -128,26 +141,26 @@ header .right {
 .form-style-10 .inner-wrap {
     padding: 20px;
     background: #F8F8F8;
-    /*    border-radius: 6px;*/
+   border-radius: 6px;
     margin-bottom: 15px;
 }
 
 .form-style-10 h1 {
-    background: #2A88AD;
+    background: #95D300;
     padding: 20px 30px 15px 30px;
     margin: -30px -30px 30px -30px;
-    /*    border-radius: 10px 10px 0 0;*/
-    /*
+       border-radius: 10px 10px 0 0;
+
     -webkit-border-radius: 10px 10px 0 0;
     -moz-border-radius: 10px 10px 0 0;
-*/
+
     color: #fff;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.12);
     font: normal 25px 'Bitter', serif;
     -moz-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
     -webkit-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
     box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
-    border: 1px solid #257C9E;
+    border: 1px solid #95D300;
 }
 
 .form-style-10 h1>span {
@@ -203,7 +216,7 @@ header .right {
 
 .form-style-10 input[type="button"],
 .form-style-10 input[type="submit"] {
-    background: #2A88AD;
+    background: #FF7E36 ;
     padding: 8px 20px 8px 20px;
     /* border-radius: 5px; */
     -webkit-border-radius: 5px;
@@ -214,13 +227,13 @@ header .right {
     -moz-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
     -webkit-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
     box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
-    border: 1px solid #257C9E;
+    border: 1px solid #fff ;
     font-size: 15px;
 }
 
 .form-style-10 input[type="button"]:hover,
 .form-style-10 input[type="submit"]:hover {
-    background: #2A6881;
+    background: #95D300  ;
     -moz-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
     -webkit-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
     box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
@@ -240,33 +253,39 @@ header .right {
 .section-mission {
     
     margin: 10px;
-    height: 750px;
+    height: auto;
      background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(../img/picture2-1.png);
     background-attachment: fixed; /*image stays there when scrolled*/
     
 }
 
+.section-mission .col.span-1-of-3 {
+    text-align: center;
+}
 
-blockquote {
+
+.section-mission img {
+    width:  90%;
+    height: 100%;
+}
+
+.contents {
     padding: 5%;
-    margin: 20px;
     margin-left: 40px;
 
     line-height: 145%;
     position: relative; /*parent relative child -> absolute*/
-    margin-top: 40px;
     
 }
 
-blockquote span{
-    color: #2a88ad;
+.contents span{
+    color: #AAF436;
     font-size: 30px;
     font-weight: 400;
     line-height: 200%;
 }
 
-blockquote:before {    /*sources from*/
-    content: "\201C"; /*https://css-tricks.com/snippets/html/glyphs/*/
+.contents:before {    /*sources from*/
     font-size: 500%;
     display: block;
     position: absolute;
@@ -304,7 +323,7 @@ blockquote:before {    /*sources from*/
 footer {
     margin: 10px;
     margin-top: 0;
-    background-color: #2a88ad;
+    background-color: #FF7E36;
     padding: 50px;
     font-size: 80%;
     color: #fff;
@@ -345,7 +364,7 @@ footer {
 
 .ion-social-facebook,
 .ion-social-twitter,
-.ion-social-googleplus,
+.ion-email,
 .ion-social-instagram {
     transition: color: 0.2s;
     
@@ -360,8 +379,8 @@ footer {
     color: #55acee;
 }
 
-.ion-social-googleplus:hover {
-    color: #dd4b39;
+.ion-email:hover {
+    color: #f4c20d;
 }
 
 .ion-social-instagram:hover {
